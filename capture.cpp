@@ -576,6 +576,8 @@ int main()
             fclose(time_file);
         }
         XCloseDisplay(display);
+
+        // Right now havnt added graceful shutdon , but soon .......
         PixelFormatToVideo("window_capture/");
     }
     catch (const std::exception &e)
